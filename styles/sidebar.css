@@ -2,10 +2,10 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    top: 55px;                                  /*same as height of the header*/
+    top: 55px;                                  
     background-color: white;
     width: 72px;
-    z-index: 200;                               /*coz the header is covering the sidebar. z-index of header is 100. make this 200*/
+    z-index: 200;                               
     padding-top: 5px;
 }
 

@@ -39,7 +39,7 @@
     margin-right: 35px;
     max-width: 500px;
     display: flex;
-                                          /* flex-direction: row    - not required coz its a default value */
+                                          
     justify-content: center;
     align-items: center;
 }
@@ -54,10 +54,10 @@
     border-color: rgb(194, 194, 194);
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-    width: 0;                                       /*sarch bar has a default width which makes it not shrink. set width: 0 to shrink*/
+    width: 0;                                       
 }
 
-.search-bar::placeholder {                          /*to target search bar on input element*/
+.search-bar::placeholder {                          
     font-family: Roboto, Arial;
     font-size: 16px;
 }
@@ -71,7 +71,7 @@
     border-color: rgb(194, 194, 194);
     margin-left: -1px;
     margin-right: 10px;
-}                                                   /*to vertically align the search button, turning the search-button into a flexbox since its parent or add spacing to the icon to push it down*/
+}                                                   
 
 .search-button,
 .voice-search-button,
@@ -81,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;                             /*for search button tool tip*/
+    position: relative;                            
     
 }
 
@@ -101,10 +101,10 @@
     font-size: 12px;
 
     bottom: -30px;
-    opacity: 0;                                /*to make it appear only when hovered*/
+    opacity: 0;                                
     transition: opacity 0.15s;
-    pointer-events: none;                      /*to disable hovers when pointing on tooltip a*/
-    white-space: nowrap;                       /*will prevent the text from wrapping around*/             
+    pointer-events: none;                     
+    white-space: nowrap;                                
 
 }
 
@@ -113,7 +113,7 @@
 .voice-search-button:hover .tooltip,
 .upload-icon-container:hover .tooltip,
 .youtube-apps-container:hover .tooltip,
-.notifications-container:hover .tooltip {                 /*targeting tooltip only when hovering over search button*/
+.notifications-container:hover .tooltip {                 
     opacity: 1;
 }
 
@@ -160,7 +160,7 @@
 
 .notifications-count {
     position: absolute;
-    top: -2px;;                                /*to get beyond the top edge of the container*/
+    top: -2px;;                                
     right: -5px;
     background-color: rgb(177, 40, 40);
     color: white;
